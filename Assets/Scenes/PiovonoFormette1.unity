@@ -282,16 +282,95 @@ Transform:
   m_PrefabParentObject: {fileID: 4251152588429750, guid: 3cfcb4391acaf4c4f9dc3d2ed2cd3bac,
     type: 2}
   m_PrefabInternal: {fileID: 871237168}
---- !u!1 &489014731 stripped
+--- !u!1 &489014731
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 1876446351184370, guid: 9ad50077fbb32df4ab4d2306fb9de98a,
     type: 2}
   m_PrefabInternal: {fileID: 1691567453}
---- !u!4 &489014735 stripped
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 489014735}
+  - component: {fileID: 489014734}
+  - component: {fileID: 489014733}
+  - component: {fileID: 489014732}
+  m_Layer: 0
+  m_Name: PlayerCerchioNero
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &489014732
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23429398749477648, guid: 9ad50077fbb32df4ab4d2306fb9de98a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1691567453}
+  m_GameObject: {fileID: 489014731}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f3f874b3f30cbec4aadf06ae0a74518a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &489014733
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 135771336059836432, guid: 9ad50077fbb32df4ab4d2306fb9de98a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1691567453}
+  m_GameObject: {fileID: 489014731}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &489014734
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33778141786193420, guid: 9ad50077fbb32df4ab4d2306fb9de98a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1691567453}
+  m_GameObject: {fileID: 489014731}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &489014735
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4775500469811786, guid: 9ad50077fbb32df4ab4d2306fb9de98a,
     type: 2}
   m_PrefabInternal: {fileID: 1691567453}
+  m_GameObject: {fileID: 489014731}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1131775861}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &554334310
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,7 +563,7 @@ MonoBehaviour:
     type: 2}
   quadratobianco: {fileID: 54989491644786354, guid: 1ceabca230b3c4842b823e42255c041a,
     type: 2}
-  cerchionero: {fileID: 54836802919049620, guid: 9ad50077fbb32df4ab4d2306fb9de98a,
+  cerchionero: {fileID: 54690651193161742, guid: 9ad50077fbb32df4ab4d2306fb9de98a,
     type: 2}
   cerchiobianco: {fileID: 54234055546060178, guid: 3cfcb4391acaf4c4f9dc3d2ed2cd3bac,
     type: 2}
@@ -1095,7 +1174,7 @@ Prefab:
     m_RemovedComponents:
     - {fileID: 54836802919049620, guid: 9ad50077fbb32df4ab4d2306fb9de98a, type: 2}
     - {fileID: 114579417489133608, guid: 9ad50077fbb32df4ab4d2306fb9de98a, type: 2}
-  m_ParentPrefab: {fileID: 100100000, guid: 9ad50077fbb32df4ab4d2306fb9de98a, type: 2}
+  m_ParentPrefab: {fileID: 0}
   m_IsPrefabParent: 0
 --- !u!1 &1755970182
 GameObject:

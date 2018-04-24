@@ -23,7 +23,7 @@ public class PlayerScript : MonoBehaviour
         BlackSquare.SetActive(false);
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         // con spazio cambia il colore
         if (Input.GetKeyDown(KeyCode.Space))
