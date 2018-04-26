@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CerchioNeroScript : MonoBehaviour {
 
@@ -11,7 +12,37 @@ public class CerchioNeroScript : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        else
-            Debug.Log("gameover");
+        if (collision.collider.name == "InvisibleWall")
+        {
+            GameOver();
+        }
+
+        if (collision.collider.name == "PlayerCerchioNero")
+        {
+            GameOver();
+        }
+
+        if (collision.collider.name == "PlayerQuadratoNero")
+        {
+            GameOver();
+        }
+
+        if (collision.collider.name == "PlayerCerchioBianco")
+        {
+            GameOver();
+        }
+
     }
+
+    void Distruggi()
+    {
+        Destroy(gameObject);
+    }
+
+    void GameOver()
+    {
+        SceneManager.LoadScene("GameOverScene");
+        Debug.Log("gameover");
+    }
+
 }

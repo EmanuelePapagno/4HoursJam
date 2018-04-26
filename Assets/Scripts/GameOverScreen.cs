@@ -1,12 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Timescript : MonoBehaviour {
-
-
-    public float timer;
-
+public class GameOverScreen : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +12,8 @@ public class Timescript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        timer = timer +Time.deltaTime;
-
+        if (Input.GetKeyDown(KeyCode.R)){
+            SceneManager.LoadScene("PiovonoFormette1");
+        }
 	}
 }

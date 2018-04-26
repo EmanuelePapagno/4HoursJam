@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/PiovonoFormette1.unity
+    guid: 6beb477bfb1fe06418529a8af9d5d6ec
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: ff6d5b73f32dedb40ad3abe24577df8f
